@@ -15,11 +15,15 @@ class Person {
   growUpOneYear() {
     this.age++;
   }
+  sayHowOldIAM() {
+    console.log("I am " + this.age);
+  }
 }
 
-let firstPersonOnEarth = new ("adam", 0, "male")();
+let firstPersonOnEarth = new Person("adam", 0, "male");
 firstPersonOnEarth.introduceItSelf();
 firstPersonOnEarth.growUpOneYear();
 firstPersonOnEarth.growUpOneYear();
 firstPersonOnEarth.growUpOneYear();
 firstPersonOnEarth.introduceItSelf();
+firstPersonOnEarth.sayHowOldIAM();
